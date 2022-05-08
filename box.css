@@ -42,6 +42,11 @@
     transition: 0.5s;
 }
 
+.container .h4 .card:hover
+{
+    opacity:0;
+}
+
 .container .card:hover .content
 {
     transform: translateY(0px);
