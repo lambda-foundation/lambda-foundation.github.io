@@ -42,7 +42,7 @@
     transition: 0.5s;
 }
 
-.container .h4 .card:hover
+.container .card:hover h4
 {
     opacity:0;
 }
