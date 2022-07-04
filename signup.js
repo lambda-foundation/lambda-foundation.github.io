@@ -9,7 +9,7 @@ formElem.onsubmit = async (e) => {
 	e.preventDefault();
 
 	var request = new XMLHttpRequest();
-	request.open("POST", "https://discord.com/api/webhooks/993266968817827890/iVH5InbrYNF9dPUfKVKXoRTc6QLY4mJ9netkoCKaeUvsiDOaZ53fYZxRg4UAs4b46M77");
+	request.open("POST", "https://discord.com/api/webhooks/993304045697630290/MuFTwItniXiglrh_M4eNcfzyz7gNLQDqVlyVKGOkbdtMBEnS6jkAO7pBZ6llWI0a7qzg");
 
 	request.setRequestHeader('Content-type', 'application/json');
 
@@ -53,7 +53,7 @@ formElem.onsubmit = async (e) => {
 	var params = {
 		username: "Lambda Invite Bot",
 		avatar_url: "https://github.com/lambda-foundation/python_repo_template/raw/main/assets/logo.png",
-		content: `Join request for ${discordTag}:\nDiscord Tag: \`${discordTag}\`\nFirst Name: \`${firstName}\`\nLast Name: \`${lastName}\``
+		content: `Join request for \`${discordTag}\`:\nDiscord Tag: \`${discordTag}\`\nFirst Name: \`${firstName}\`\nLast Name: \`${lastName}\``
 	}
 	request.send(JSON.stringify(params));
 };
