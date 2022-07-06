@@ -1,0 +1,415 @@
+:root {
+  /* --background-color: #1e2127; */
+  --h1-color: #56b6c2;
+  --p-color: #98c379;
+  --h2-color: #e06c75;
+  --h3-color: #a9a1e1;
+  --pre-bg-color: #000000;
+  --pre-color: #d19a66;
+}
+
+html, body {
+    font-family: "Fira Code", "Monospace";
+    height: 100%;
+    margin: 0;
+}
+
+/* @media (prefers-color-scheme: dark) { */
+html,
+body {
+  background-color: #1e2127;
+  overflow-x: hidden;
+}
+
+hr {
+  height: 1px;
+  border: 0;
+  
+  /*background-color: #bbc2cf;*/
+  background-color: #5c6370;
+    
+}
+/* } */
+
+/* @media (prefers-color-scheme: light) {
+  html,
+  body {
+    background-color: #fefefe;
+  }
+
+  hr {
+    height: 1px;
+    border: 0;
+    background-color: #5c6370;
+  }
+} */
+
+blockquote {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 0px;
+  padding-left: 15px;
+  border-left: 3px solid #ccc;
+  color: #e06c75;
+}
+
+#video-background {
+  zzzzzzzheight: 100%;
+  background-size: cover;
+  position: relative;
+}
+
+#video-background:before {
+  content: "";
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+#video-background > * {
+  position: relative;
+}
+
+
+.dark-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  background-color: #1e2127;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+
+.light-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  background-color: #ffffff;
+}
+
+.light-content-box p {
+    color: #000;
+}
+
+.light-content-box {
+  /* margin-left: 50px;
+  margin-right: 50px; */
+  padding-top: 50px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 50px;
+  background-color: #ffffff;
+  font-weight: bold;
+}
+
+.dark-content-box {
+  /* margin-left: 50px; */
+  /* margin-right: 50px; */
+  padding-top: 50px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 50px;
+
+  background-color: #1e2127;
+}
+
+.content-box {
+  /* margin-left: 50px; */
+  /* margin-right: 50px; */
+  padding-top: 50px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 50px;
+}
+
+.background-image {
+  height: 100%;
+  background-image: url("../images/background.jpg");
+  background-size: cover;
+  position: relative;
+}
+
+.background-image:before {
+  content: "";
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.background-image > * {
+  position: relative;
+}
+
+/* h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+} */
+
+.navbar .active {
+  background-color: #a9a1e1;
+}
+
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #1e2127;
+}
+
+.navbar li {
+  float: left;
+}
+
+.navbar li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+.navbar li a:hover {
+  background-color: #98c379;
+}
+
+
+
+h1 {
+  color: var(--h1-color);
+}
+
+h2 {
+  color: var(--h2-color);
+}
+
+h3 {
+  color: var(--h3-color);
+}
+
+p {
+  color: var(--p-color);
+  font-weight: bold;
+}
+
+pre {
+  background-color: var(--pre-bg-color);
+  color: var(--pre-color);
+  font-size: 16px;
+  border-radius: 10px;
+}
+
+a {
+  color: var(--h1-color);
+}
+
+time {
+  color: #a9a1e1;
+}
+
+.postlist {
+  color: #a9a1e1;
+}
+
+.postlist li > div {
+  color: var(--h2-color);
+}
+
+li {
+  color: #a9a1e1;
+}
+
+.custom-shape-divider-bottom-1644694946 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-bottom-1644694946 svg {
+  position: relative;
+  display: block;
+  width: calc(200% + 1.3px);
+  height: 191px;
+}
+
+.custom-shape-divider-bottom-1644694946 .shape-fill {
+  fill: #1e2127;
+}
+
+.post-header {
+  /* padding-top: 15vh;
+  padding-bottom: 15vh;
+  text-align: center;
+  background-color: #ffffff;
+  min-height: 30vh; */
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 60%;
+  background-color: var(--h1-color);
+}
+
+.post-header h1 {
+  color: #ffffff;
+}
+
+footer {
+  position: relative;
+  width: 100%;
+  background: #56b6c2;
+  min-height: 100px;
+  padding: 20px 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+footer .social_icon,
+footer .menu
+{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+  flex-wrap: wrap;
+}
+
+footer .social_icon li,
+footer .menu
+{
+  list-style: none;
+}
+
+
+footer .social_icon li a {
+  font-size: 45px;
+  color: #fff;
+  margin: 0 10px;
+  display: inline-block;
+  transition: 0.5s;
+}
+
+footer .social_icon a {
+  color: #fff;
+}
+
+footer .social_icon li a:hover {
+  transform: translateY(-10px);
+}
+
+footer .menu li a {
+  font-size: 20px;
+  color: #fff;
+  margin: 0 10px;
+  display: inline-block;
+  text-decoration: none;
+  opacity: 0.5;
+}
+
+footer .menu li a:hover {
+  opacity: 1;
+}
+
+footer p {
+  color: #fff;
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  font-size: 15px;
+}
+
+/* footer .wave {
+  position: absolute;
+  top: -100px;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background: url(svg.png);
+  background-size: 100px 100px;
+}
+
+footer .wave#wave1 {
+  z-index: 1000;
+  opacity: 1;
+  bottom: 0;
+  animation: animateWave 10s linear infinite;
+}
+
+@keyframes animateWave
+{
+  0% {
+    background-position-x: 1000px;
+  }
+
+  100% {
+    background-position-x: 0px;
+  }
+} */
+
+button {
+    font-family: "Fira Code";
+}
+
+input[type=text], input[type=submit] {
+    font-family: "Fira Code";
+    width: 60%;
+    padding: 12px 20px;
+
+}
+
+input[type=submit] {
+    border-color: #ffb86c;
+}
+
+input[type=submit]:hover {
+    background-color: #ffb86c;
+}
+
+input {
+    font-family: "Fira Code";
+    border-radius: 5px;
+    border-width: 4px;
+    border-color: #ffb86c;
+    background-color: #282a36;
+    color: #f8f8f2;
+}
+
+
+#formElem {
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+#formElem input[type=text], input[type=submit] {
+    width: 100%;
+}
