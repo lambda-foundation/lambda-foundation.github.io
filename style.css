@@ -355,3 +355,10 @@ footer .wave#wave1 {
     background-position-x: 0px;
   }
 } */
+
+button, input {
+  border-radius: 5px;
+  border-color: #ffffff00;
+  background-color: #56b6c2;
+  color: #f8f8f2;
+}
