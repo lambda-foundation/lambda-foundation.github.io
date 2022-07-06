@@ -1,5 +1,6 @@
+/* General settings. */
+
 :root {
-  /* --background-color: #1e2127; */
   --h1-color: #56b6c2;
   --p-color: #98c379;
   --h2-color: #e06c75;
@@ -9,70 +10,18 @@
 }
 
 html, body {
-    font-family: "Fira Code", "Monospace";
-    height: 100%;
-    margin: 0;
-}
-
-/* @media (prefers-color-scheme: dark) { */
-html,
-body {
-  background-color: #1e2127;
+  font-family: "Fira Code", "Monospace";
+  height: 100%;
+  margin: 0;
+  background-color: #1e212700;
   overflow-x: hidden;
 }
 
-hr {
-  height: 1px;
-  border: 0;
-  
-  /*background-color: #bbc2cf;*/
-  background-color: #5c6370;
-    
-}
-/* } */
 
-/* @media (prefers-color-scheme: light) {
-  html,
-  body {
-    background-color: #fefefe;
-  }
 
-  hr {
-    height: 1px;
-    border: 0;
-    background-color: #5c6370;
-  }
-} */
 
-blockquote {
-  margin-top: 10px;
-  margin-bottom: 10px;
-  margin-left: 0px;
-  padding-left: 15px;
-  border-left: 3px solid #ccc;
-  color: #e06c75;
-}
 
-#video-background {
-  zzzzzzzheight: 100%;
-  background-size: cover;
-  position: relative;
-}
-
-#video-background:before {
-  content: "";
-  background-color: rgba(0, 0, 0, 0.5);
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-}
-
-#video-background > * {
-  position: relative;
-}
-
+/* Boxes */
 
 .dark-box {
   display: flex;
@@ -136,6 +85,12 @@ blockquote {
   padding-bottom: 50px;
 }
 
+
+
+
+
+/* Background images. */
+
 .background-image {
   height: 100%;
   background-image: url("../images/background.jpg");
@@ -157,14 +112,11 @@ blockquote {
   position: relative;
 }
 
-/* h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-weight: normal;
-} */
+
+
+
+
+/* Navbar */
 
 .navbar .active {
   background-color: #a9a1e1;
@@ -196,6 +148,7 @@ h6 {
 }
 
 
+/* Tag styling */
 
 h1 {
   color: var(--h1-color);
@@ -225,61 +178,30 @@ a {
   color: var(--h1-color);
 }
 
-time {
-  color: #a9a1e1;
+hr {
+  height: 1px;
+  border: 0;
+  background-color: #5c6370;
 }
 
-.postlist {
-  color: #a9a1e1;
-}
-
-.postlist li > div {
-  color: var(--h2-color);
+blockquote {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 0px;
+  padding-left: 15px;
+  border-left: 3px solid #ccc;
+  color: #e06c75;
 }
 
 li {
   color: #a9a1e1;
 }
 
-.custom-shape-divider-bottom-1644694946 {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  overflow: hidden;
-  line-height: 0;
-}
 
-.custom-shape-divider-bottom-1644694946 svg {
-  position: relative;
-  display: block;
-  width: calc(200% + 1.3px);
-  height: 191px;
-}
 
-.custom-shape-divider-bottom-1644694946 .shape-fill {
-  fill: #1e2127;
-}
 
-.post-header {
-  /* padding-top: 15vh;
-  padding-bottom: 15vh;
-  text-align: center;
-  background-color: #ffffff;
-  min-height: 30vh; */
-  position: relative;
 
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 60%;
-  background-color: var(--h1-color);
-}
-
-.post-header h1 {
-  color: #ffffff;
-}
+/* Footer */
 
 footer {
   position: relative;
@@ -348,33 +270,11 @@ footer p {
   font-size: 15px;
 }
 
-/* footer .wave {
-  position: absolute;
-  top: -100px;
-  left: 0;
-  width: 100%;
-  height: 100px;
-  background: url(svg.png);
-  background-size: 100px 100px;
-}
 
-footer .wave#wave1 {
-  z-index: 1000;
-  opacity: 1;
-  bottom: 0;
-  animation: animateWave 10s linear infinite;
-}
 
-@keyframes animateWave
-{
-  0% {
-    background-position-x: 1000px;
-  }
 
-  100% {
-    background-position-x: 0px;
-  }
-} */
+
+/* Form styling */
 
 button {
     font-family: "Fira Code";
@@ -404,7 +304,6 @@ input {
     color: #f8f8f2;
 }
 
-
 #formElem {
     margin-left: 25%;
     margin-right: 25%;
@@ -412,4 +311,23 @@ input {
 
 #formElem input[type=text], input[type=submit] {
     width: 100%;
+}
+
+
+
+
+
+/* Background Video */
+
+#background-video {
+	height: 100vh;
+	width: 100vw;
+	object-fit: cover;
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	z-index: -1;
+	filter: brightness(40%);
 }
