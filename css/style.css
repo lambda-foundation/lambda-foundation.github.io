@@ -8,11 +8,10 @@
   --pre-color: #d19a66;
 }
 
-html,
-body {
-  font-family: "Fira Code", "Monospace";
-  height: 100%;
-  margin: 0;
+html, body {
+    font-family: "Fira Code", "Monospace";
+    height: 100%;
+    margin: 0;
 }
 
 /* @media (prefers-color-scheme: dark) { */
@@ -53,6 +52,27 @@ blockquote {
   border-left: 3px solid #ccc;
   color: #e06c75;
 }
+
+#video-background {
+  zzzzzzzheight: 100%;
+  background-size: cover;
+  position: relative;
+}
+
+#video-background:before {
+  content: "";
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+#video-background > * {
+  position: relative;
+}
+
 
 .dark-box {
   display: flex;
@@ -118,7 +138,7 @@ blockquote {
 
 .background-image {
   height: 100%;
-  background-image: url("background.jpg");
+  background-image: url("../images/background.jpg");
   background-size: cover;
   position: relative;
 }
@@ -355,3 +375,41 @@ footer .wave#wave1 {
     background-position-x: 0px;
   }
 } */
+
+button {
+    font-family: "Fira Code";
+}
+
+input[type=text], input[type=submit] {
+    font-family: "Fira Code";
+    width: 60%;
+    padding: 12px 20px;
+
+}
+
+input[type=submit] {
+    border-color: #ffb86c;
+}
+
+input[type=submit]:hover {
+    background-color: #ffb86c;
+}
+
+input {
+    font-family: "Fira Code";
+    border-radius: 5px;
+    border-width: 4px;
+    border-color: #ffb86c;
+    background-color: #282a36;
+    color: #f8f8f2;
+}
+
+
+#formElem {
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+#formElem input[type=text], input[type=submit] {
+    width: 100%;
+}
