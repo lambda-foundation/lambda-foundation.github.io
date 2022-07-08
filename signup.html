@@ -32,7 +32,9 @@
 
       <p>We would love to have you join us!</p>
 
-      <p>No previous coding knowledge is required, we will teach you everything you need to get started in the field of computer science!</p>
+      <p>No previous coding knowledge is required, we will teach you everything you need to get started!</p>
+
+      <p><i><b>NOTE: Please use your school email when filling out this form.</b></i></p>
     </div>
 
 
@@ -55,6 +57,13 @@
       <input type="text" name="lastName" placeholder="Doe">
       <br>
 
+      <br>
+      <label>Email Address (Use your school one).</label>
+      <br>
+      <input type="text" name="emailAddress" placeholder="example@k12.friscoisd.org">
+      <br>
+
+
       <!-- This is a bot catcher. If any bot tries to submit data and fills this out, do not send to the webhook. -->
       <input type="text" name="email" style="display: none">
 
@@ -74,6 +83,13 @@
     <div slot="modal">
       <h2>Name is empty!</h2>
       <p>Please add a name!</p>
+    </div>
+  </cta-modal>
+
+  <cta-modal id="email-validation">
+    <div slot="modal">
+      <h2>Incorrect Email Format!</h2>
+      <p>Format must be: name@k12.friscoisd.org</p>
     </div>
   </cta-modal>
 

@@ -1,6 +1,7 @@
 const formElem = document.getElementById("formElem");
 const nameValidationModal = document.getElementById("name-validation");
 const tagValidationModal = document.getElementById("tag-validation");
+const emailValidationModal = document.getElementById("email-validation")
 
 
 formElem.onsubmit = async (e) => {
@@ -16,7 +17,8 @@ formElem.onsubmit = async (e) => {
 	const discordTag = formData.get("discordTag");
 	const firstName = formData.get("firstName");
 	const lastName = formData.get("lastName");
-	const email = formData.get("email");
+	const fake = formData.get("email");
+	const emailAddress = formData.get("emailAddress");
 	
 	// Validate discord tag.
 	const regex = /.*#\d{4}\b/g;
@@ -45,15 +47,21 @@ formElem.onsubmit = async (e) => {
 		return
 	}
 
+	// If there are not two parts of the email address or the end of the email address does not match.
+	if (emailAddress.split("@").length !== 2 || emailAddress.split("@")[1] !== "k12.friscoisd.org") {
+		emailValidationModal.setAttribute("active", true);	
+		return
+	}
+
 	// If a bot tries to submit the form, do nothing.
-	if (!email === "" || !email === null) {
+	if (!fake === "" || !fake === null) {
 		return
 	}
 
 	var params = {
 		username: "Lambda Invite Bot",
 		avatar_url: "https://github.com/lambda-foundation/python_repo_template/raw/main/assets/logo.png",
-		content: `Join request for \`${discordTag}\`:\nDiscord Tag: \`${discordTag}\`\nFirst Name: \`${firstName}\`\nLast Name: \`${lastName}\``
+		content: `Join request for \`${discordTag}\`:\nEmail: \`${emailAddress}\`\nFirst Name: \`${firstName}\`\nLast Name: \`${lastName}\``
 	}
 	request.send(JSON.stringify(params));
 };
