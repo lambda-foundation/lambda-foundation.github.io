@@ -9,7 +9,8 @@
   --pre-color: #d19a66;
 }
 
-html, body {
+html,
+body {
   font-family: "Fira Code", "Monospace";
   height: 100%;
   margin: 0;
@@ -51,7 +52,7 @@ html, body {
 }
 
 .light-content-box p {
-    color: #000;
+  color: #000;
 }
 
 .light-content-box {
@@ -108,7 +109,7 @@ html, body {
   bottom: 0;
 }
 
-.background-image > * {
+.background-image>* {
   position: relative;
 }
 
@@ -216,8 +217,7 @@ footer {
 }
 
 footer .social_icon,
-footer .menu
-{
+footer .menu {
   position: relative;
   display: flex;
   justify-content: center;
@@ -227,8 +227,7 @@ footer .menu
 }
 
 footer .social_icon li,
-footer .menu
-{
+footer .menu {
   list-style: none;
 }
 
@@ -277,40 +276,42 @@ footer p {
 /* Form styling */
 
 button {
-    font-family: "Fira Code";
+  font-family: "Fira Code";
 }
 
-input[type=text], input[type=submit] {
-    font-family: "Fira Code";
-    width: 60%;
-    padding: 12px 20px;
+input[type=text],
+input[type=submit] {
+  font-family: "Fira Code";
+  width: 60%;
+  padding: 12px 20px;
 
 }
 
 input[type=submit] {
-    border-color: #ffb86c;
+  border-color: #ffb86c;
 }
 
 input[type=submit]:hover {
-    background-color: #ffb86c;
+  background-color: #ffb86c;
 }
 
 input {
-    font-family: "Fira Code";
-    border-radius: 5px;
-    border-width: 4px;
-    border-color: #ffb86c;
-    background-color: #282a36;
-    color: #f8f8f2;
+  font-family: "Fira Code";
+  border-radius: 5px;
+  border-width: 4px;
+  border-color: #ffb86c;
+  background-color: #282a36;
+  color: #f8f8f2;
 }
 
 #formElem {
-    margin-left: 25%;
-    margin-right: 25%;
+  margin-left: 25%;
+  margin-right: 25%;
 }
 
-#formElem input[type=text], input[type=submit] {
-    width: 100%;
+#formElem input[type=text],
+input[type=submit] {
+  width: 100%;
 }
 
 
@@ -320,14 +321,14 @@ input {
 /* Background Video */
 
 #background-video {
-	height: 100vh;
-	width: 100vw;
-	object-fit: cover;
-	position: fixed;
-	left: 0;
-	right: 0;
-	top: 0;
-	bottom: 0;
-	z-index: -1;
-	filter: brightness(40%);
+  height: 100vh;
+  width: 100vw;
+  object-fit: cover;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+  filter: brightness(40%);
 }
