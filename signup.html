@@ -1,0 +1,133 @@
+<html lang="en-us">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+
+  <title>Lambda Foundation</title>
+</head>
+
+<body>
+  <div class="navbar">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about-us.html">About Us</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a class="active" href="signup.html">Signup</a></li>
+      <li style="float: right"><a href="https://github.com/lambda-foundation" target="_blank">GitHub</a></li>
+    </ul>
+  </div>
+
+
+  <div class="light-content-box">
+    <div align="center">
+      <img src="images/lambda_foundation_icon.png" height="250px">
+
+      <h1>Join the club!</h1>
+
+      <p>We would love to have you join us!</p>
+
+      <p>No previous coding knowledge is required, we will teach you everything you need to get started!</p>
+
+      <p><i><b>NOTE: Please use your campus email when filling out this form.</b></i></p>
+    </div>
+
+
+    <form id="formElem">
+      <br>
+      <label>Discord Tag</label>
+      <br>
+      <input type="text" name="discordTag" placeholder="example#1234">
+      <br>
+
+      <br>
+      <label>First Name</label>
+      <br>
+      <input type="text" name="firstName" placeholder="John">
+      <br>
+
+      <br>
+      <label>Last Name</label>
+      <br>
+      <input type="text" name="lastName" placeholder="Doe">
+      <br>
+
+      <br>
+      <label>Email Address (Use your campus one).</label>
+      <br>
+      <input type="text" name="emailAddress" placeholder="example@campus.org">
+      <br>
+
+
+      <!-- This is a bot catcher. If any bot tries to submit data and fills this out, do not send to the webhook. -->
+      <input type="text" name="email" style="display: none">
+
+      <br>
+      <input type="submit">
+    </form>
+  </div>
+
+  <cta-modal id="submitted">
+    <div slot="modal">
+      <h2>Form has been submitted!</h2>
+      <p>Thanks! You will be admitted shortly!</p>
+    </div>
+  </cta-modal>
+
+  <cta-modal id="tag-validation">
+    <div slot="modal">
+      <h2>Discord Tag doesn't follow correct format!</h2>
+      <p>Format: example#1234</p>
+    </div>
+  </cta-modal>
+
+  <cta-modal id="name-validation">
+    <div slot="modal">
+      <h2>Name is empty!</h2>
+      <p>Please add a name!</p>
+    </div>
+  </cta-modal>
+
+  <cta-modal id="email-validation">
+    <div slot="modal">
+      <h2>Incorrect Email Format!</h2>
+      <p>Format must be: name@k12.friscoisd.org</p>
+    </div>
+  </cta-modal>
+
+  <footer>
+
+    <div class="waves">
+      <div class="wave" id="wave1"></div>
+      <!-- <div class="wave" id="wave2"></div>
+        <div class="wave" id="wave3"></div>
+        <div class="wave" id="wave4"></div> -->
+    </div>
+
+    <ul class="social_icon">
+      <li><a href="https://github.com/lambda-foundation" target="_blank">
+          <ion-icon name="logo-github"></ion-icon>
+        </a></li>
+    </ul>
+
+    <ul class="menu">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About Us</a></li>
+      <li><a href="#">Projects</a></li>
+    </ul>
+
+    <p>2022 Lambda Foundation, This site is open-source!</p>
+  </footer>
+
+  <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+  <script src="js/cta-modal.js"></script>
+  <script src="js/signup.js"></script>
+
+</body>
+
+</html>

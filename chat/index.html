@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script type='text/javascript' src='https://cdn.scaledrone.com/scaledrone.min.js'></script>
+<link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+  <!--<script type='text/javascript' src='http://0.0.0.0:8080/scaledrone.js'></script>-->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <style>
+    body {
+        background-color: #000;
+      box-sizing: border-box;
+      margin: 0;
+      padding: 13px;
+      display: flex;
+      flex-direction: column;
+      max-height: 100vh;
+      color: #fff;
+    }
+
+    * {
+      font-family: VT323, monospace;
+    }
+
+    .members-count,
+    .members-list,
+    .messages {
+      border: 1px solid #c21823;
+      padding: 15px;
+      margin-bottom: 15px;
+    }
+
+    .messages {
+        color: #fff;
+    }
+
+    .members-count {
+        color: #fff
+    }
+
+    .messages {
+        display: flex;
+        flex-shrink: 1;
+        overflow: auto;
+        height: 400px;
+        overflow-x: hidden;
+        overflow-y: auto;
+        flex-direction: column-reverse;
+    }
+
+    .message {
+      padding: 5px 0;
+    }
+    .message .member {
+      display: inline-block;
+    }
+
+    .member {
+      padding-right: 10px;
+      position: relative;
+    }
+
+    .message-form {
+      display: flex;
+      flex-shrink: 0;
+    }
+    .message-form__input {
+      flex-grow: 1;
+      border: 1px solid #c21823;
+      padding: 10px 15px;
+      font-size: 16px;
+    }
+    .message-form__button {
+      margin: 10px;
+    }
+
+    .message-form__input {
+        background-color: #000;
+        color: #fff;
+    }
+  </style>
+</head>
+<body>
+  <h1>Lambda Chat</h1>
+  <form id="name_form" onsubmit="go(); return false;">
+      <input id="name" placeholder="Enter a username." type="text">
+  </form>
+  
+  <div id="content">
+      <div class="members-count">-</div>
+      <div class="members-list">-</div>
+      <div class="messages"></div>
+      <form class="message-form" onsubmit="return false;">
+        <input class="message-form__input" placeholder="Type a message.." type="text"/>
+      </form>
+  </div>
+  
+  <script src="./script.js"></script>
+</body>
+</html>
